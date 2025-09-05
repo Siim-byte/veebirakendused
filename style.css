@@ -1,0 +1,42 @@
+h1 {
+    background-color: cornflowerblue; /*tausta värv*/
+    color: forestgreen; /*teksti värv*/
+
+}
+header , footer {
+    font-family: georgia;
+    font-size: large;
+    width: 60%;
+    border: 5px dotted grey;/*dashed, dotted, double, outlined*/
+    background-color: cornflowerblue;
+    border-radius: 120px;
+    padding:1%; /*vahe teksti ja piiri vahel*/
+}
+nav ul {
+    list-style-type: none;
+    text-align: center; /*teksti joondamine keskel*/
+    margin: 2%;
+    padding: 0;
+    background-color: cornflowerblue;
+}
+nav li {
+    display: inline-block;
+    float: left;
+    padding: 1%;
+}
+main{
+    margin: 50px;
+    padding: 1%;
+}
+nav a:hover{/*link fookuses*/
+    background-color: cornflowerblue;
+}
+nav li a{
+    font-family: georgia;
+    font-size: large;
+    text-decoration: none;
+    border-right: 1pt solid grey;
+    border-left: 1pt solid grey;
+    border-radius: 120pt;
+    padding : 10px;
+}
