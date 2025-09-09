@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelid HTML/CSS kujundusega</title>
+    <link rel="stylesheet" href="tabelStyle.css">
+</head>
+<body>
+<h1>Tabelid</h1>
+<table id="lihtne">
+    <caption>Lihtne värvitud tabel</caption>
+    <!--1.rida-->
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+    <!--2.rida-->
+    <tr>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+</table>
+<!-- natuke keerulisem tabel-->
+<table id="keeruline1">
+    <caption>Natuke keerulisem tabel 1</caption>
+    <!--1.rida-->
+    <tr>
+        <!-- rowspan ühendab 2 ridu-->
+        <td rowspan="2">A</td>
+        <td>B</td>
+    </tr>
+    <!--2.rida-->
+    <tr>
+        <td>C</td>
+    </tr>
+</table>
+<table id="keeruline2">
+    <caption>Keeruline tabel 2</caption>
+    <!--1.rida-->
+    <tr>
+        <td>A</td>
+        <td>B</td>
+    </tr>
+    <!--2.rida-->
+    <tr>
+        <td colspan="2">C</td>
+
+    </tr>
+</table>
+<table id="keeruline3">
+    <caption>Keeruline tabel 3</caption>
+    <!--1.rida-->
+    <tr>
+        <td>A</td>
+        <td colspan="3">B</td>
+    </tr>
+    <!--2.rida-->
+    <tr>
+        <td colspan="2">C</td>
+        <td rowspan="3">D</td>
+        <td rowspan="3">E</td>
+
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>G</td>
+
+    </tr>
+    <tr>
+        <td colspan="2">I</td>
+    </tr>
+</table>
+
+<table id="keeruline4">
+    <caption>Keeruline tabel 4</caption>
+    <!--1.rida-->
+    <tr>
+
+        <td colspan="6"></td>
+    </tr>
+    <!--2.rida-->
+    <tr>
+        <td rowspan="4"></td>
+        <td colspan="4"></td>
+        <td rowspan="5"></td>
+
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="2"></td>
+        <td rowspan="3"></td>
+
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td colspan="5"></td>
+    </tr>
+    <tr>
+
+    </tr>
+
+
+
+</table>
+
+</body>
+</html>
