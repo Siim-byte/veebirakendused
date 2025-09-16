@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Pildikaart map/area kasutamine</title>
+    <link rel="stylesheet" href="majaStyle.css">
+</head>
+<body>
+
+<h1>Maja pildikaart</h1>
+<h3>Hiire klik on akna, seina, katuse paele</h3>
+
+<img src="majake.png" alt="Ilus majake" usemap="#maja">
+<map name="maja">
+    <!--aken- ring -->
+    <area shape="circle" coords="295,456,30" href="aken.html" alt="aken">
+    <area shape="rect" coords="332,498,384,590" href="uks.html" alt="uks">
+    <!--sein - rect-->
+    <area shape="rect" coords="194,357,403,589" href="sein.html" alt="sein">
+    <!--katus - polugoon - poly cords (koik kordinaadid vasakult paremale)-->
+    <area shape="poly" coords="95,355,311,191,515,365" href="katus.html" alt="katus">
+    <area shape="circle" coords="437,573,15" href="pall.html" alt="pall">
+    <area shape="rect" coords="474,535,533,587" href="koeramaja.html" alt="koeramaja">
+    <area shape="rect" coords="407,176,455,261" href="korsten.html" alt="korsten">
+</map>
+<div id="ala">
+    Pall on kerakujuline (mõnel juhul ka natuke teistsuguse kujuga) elastne/jäik koorik, täidetud/tühi, sageli õhuga/gaasiga survestatud ese/mänguasi või sportlike mängude vahend.
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandyball1.jpg/250px-Bandyball1.jpg" alt="pall" usemap="#maja">
+</div>
+
+</body>
+</html>
