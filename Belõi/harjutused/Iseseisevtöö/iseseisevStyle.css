@@ -1,0 +1,20 @@
+#Neti{
+    width: 10%;
+    border: 1px solid black;
+    height: 10%;
+    border-collapse: separate;
+}
+#Neti td{
+    border: 1px solid black;
+    text-align: center;
+}
+#Neti2{
+    width: 10%;
+    border: 1px solid black;
+    height: 200px;
+    border-collapse: separate;
+}
+#Neti2 td{
+    border: 1px solid black;
+    text-align: center;
+}
