@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: beige;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: darkslategray;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.grid a {
+    display: block;
+    padding: 12px;
+    background: orangered;
+    border-radius: 40px;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+.grid a:hover {
+    background: goldenrod;
+}
+
+footer {
+    padding: 15px;
+    background: darkslategray;
+    font-size: 14px;
+    color: white;
+}
