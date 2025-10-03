@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormid ja nupud HTML keeles</title>
+    <link rel="stylesheet" href="vormStyle.css">
+    <script src="lugemineScript.js"></script>
+</head>
+<body>
+<h1>IT-erialane küsimustik</h1>
+<form name="ankeet">
+    <!--luhiteksti vali-->
+    <label for="nimi">Sisesta oma nimi:</label>
+    <input type="text" name="nimi" id="nimi" placeholder="eesnimi" oninput="tervitus()">
+
+    <div id="vastus"></div>
+    <br>
+    <br>
+    <!--ripploend-->
+    <label for="eriala">Mis eriala sa oled valinud</label>
+    <select name="eriala" id="eriala">
+        <option value="">Vali...</option>
+        <option value="tarkvaraarendaja">Noorem Tarkvaraarendaja</option>
+        <option value="IT spetsialist">IT spetsialist</option>
+        <option value="ratsep">Ratsep</option>
+    </select>
+    <br>
+    <br>
+    <!--numbrivali-->
+    <label for="aastat">Mitu aastat sa plaanid oppida IT erialat?</label>
+    <input type="number" name="aastat" id="aastat" min="0" max="6" oninput="tervitus()">
+    <br><br>
+    <fieldset>
+        <legend>
+            Mis programeerimise keeled sa opid
+        </legend>
+        <!--valikud-checkbox-mitu valiku mitmest-->
+
+        <input type="checkbox" name="progeerimine" id="python">
+        <label for="python">Python</label>
+        <br>
+        <input type="checkbox" name="progeerimine" id="C++">
+        <label for="C++">C++</label>
+        <br>
+        <input type="checkbox" name="progeerimine" id="Java">
+        <label for="Java">Java</label>
+        <br>
+        <input type="checkbox" name="progeerimine" id="C#">
+        <label for="C#">C#</label>
+   </fieldset>
+    <br><br>
+    <!--radionupp- uks valik mitmest-->
+    <fieldset>
+        <legend>
+            Millises keeles sa kirjutad HTML / CSS kasud?
+        </legend>
+        <input type="radio" name="keel" id="eesti">
+        <label for="eesti">Eesti</label>
+        <br>
+        <input type="radio" name="keel" id="inglise">
+        <label for="inglise">Inglise</label>
+        <br>
+        <input type="radio" name="keel" id="poola">
+        <label for="poola">Poola</label>
+        <br>
+        <input type="radio" name="keel" id="koik">
+        <label for="koik">Koik keeled sobivad</label>
+        <br>
+    </fieldset>
+    <br><br>
+    <label for="info">Kirjuta mida tead IT erialast!</label>
+    <br>
+    <textarea name="info" id="info" cols="30" rows="5">
+        vahemalt 20 sonu
+    </textarea>
+    <br><br>
+
+    <br>
+
+    <label for="email">Sisesta oma e-posti aadress:</label>
+    <input type="email" id="email" name="email" placeholder="emailadress">
+    <br><br>
+
+    <label for="vanus">Kui vana sa oled?</label>
+    <input type="number" id="vanus" name="vanus" min="1" max="120">
+    <br><br>
+
+    <fieldset>
+        <legend>Millist operatsioonisysteemi sa kasutad</legend>
+        <input type="radio" id="windows" name="os" value="Windows">
+        <label for="windows">Windows</label>
+        <br>
+        <input type="radio" id="linux" name="os" value="Linux">
+        <label for="linux">Linux</label>
+        <br>
+        <input type="radio" id="mac" name="os" value="Mac">
+        <label for="mac">Mac</label>
+        <br>
+    </fieldset>
+    <br><br>
+
+    <label for="hobi">Vali oma lemmikhobi:</label>
+    <select name="hobi" id="hobi">
+        <option value="">vali...</option>
+        <option value="sport">Sport</option>
+        <option value="muusika">Muusika</option>
+        <option value="kunst">Kunst</option>
+        <option value="videomangud">Videomangud</option>
+    </select>
+    <br><br>
+
+    <label for="synnip">Millal on sinu synnipaev?</label>
+    <input type="date" id="synnip" name="synnip">
+    <br><br>
+
+    <label for="oskused">Kui rahul oled oma arvutioskustega (1-5)?</label>
+    <input type="number" id="oskused" name="oskused" min="1" max="5">
+    <br><br>
+
+    <label for="hobitekst">Kirjelda oma lemmikhobi lahemalt</label>
+    <textarea id="hobitekst" name="hobitekst" cols="40" rows="4">vahemalt 20 sonu</textarea>
+    <br><br>
+
+    <label for="file">Laadi ules oma too naidisfaili:</label>
+    <input type="file" id="file" name="file">
+    <br><br>
+    <!--salvestamine/loobumise nupud-->
+    <button type="reset" value="Loobu" id="loobu">Loobu</button>
+    <button type="button" value="Salvesta" id="salvesta">Salvesta</button>
+    <!--html5 nupud-->
+    <button type="submit">
+        Sisesta
+    </button>
+    <button type="reset">
+        <img src="https://www.clker.com/cliparts/9/1/5/2/119498475589498995button-red_benji_park_01.svg.med.png" alt="button">
+    </button>
+    <br>
+</form>
+
+
+
+
+
+</body>
+</html>
