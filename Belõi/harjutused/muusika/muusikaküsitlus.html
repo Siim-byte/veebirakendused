@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Muusika küsitlus</title>
     <script src="muusikaScript.js"></script>
+    <link rel="stylesheet" href="muusikaStyle.css">
 </head>
 <body>
 <h1>Muusika küsitlus</h1>
@@ -40,36 +41,49 @@
     </fieldset>
     <fieldset>
         <legend>Kas sa kuulad raadiot?</legend>
-        <input type="radio" name="ja" id="yes" value="yes" onclick="radioValik()">
-        <label for="yes">Jah</label>
-        <input type="radio" name="ei" id="no" value="no" onclick="radioValik()">
-        <label for="no">Ei</label>
+        <input type="radio" name="raadio" id="ja" value="Jah" onclick="radioValik()">
+        <label for="ja">Ja</label>
+        <input type="radio" name="raadio" id="ei" value="Ei" onclick="radioValik()">
+        <label for="ei">Ei</label>
         <br><br>
         <div id="vastus4"></div>
     </fieldset>
     <fieldset>
         <legend>Milliseid raadiojaamu oskad nimetada?</legend>
-        <input type="text" name="nimetada" id="nimetada">
-        <br>
+        <input list="jaamad" name="nimetada" id="nimetada" oninput="nimetatudJaamad()">
+        <datalist id="jaamad">
+            <option value="Sky Plus">
+            <option value="Elmar">
+            <option value="Star FM">
+            <option value="Power Hit Radio">
+            <option value="Raadio 2">
+        </datalist>
+        <br><br>
         <div id="vastus5"></div>
     </fieldset>
     <fieldset>
         <legend>Millist muusikat sa kõige rohkem kuulad?</legend>
-        <select name="muusika" id="muusika">
+        <select name="muusika" id="muusika" onchange="muusikaStiilSelect()">
             <option value="">Vali...</option>
-            <option value="metal">Metal</option>
-            <option value="pop">Pop</option>
-            <option value="hiphop">Hiphop</option>
-            <option value="drun n bass">Drum ja bass</option>
-            <option value="retro">Retro</option>
-            <option value="funk">Funk</option>
+            <option value="Metal">Metal</option>
+            <option value="Pop">Pop</option>
+            <option value="Hiphop">Hiphop</option>
+            <option value="Drum ja bass">Drum ja bass</option>
+            <option value="Retro">Retro</option>
+            <option value="Funk">Funk</option>
         </select>
-        <br>
+        <br><br>
         <div id="vastus6"></div>
     </fieldset>
-    <button type="submit">Saada</button>
-    <button type="reset" value="Loobu" id="Loobu">Puhasta</button>
+    <button type="button" onclick="saada()">Saada</button>
+    <button type="button" id="Loobu" onclick="puhasta()">Puhasta</button>
 </form>
 
+
+<div id="kokkuvote"></div>
+
+<footer>
+    &copy;Siim 2025
+</footer>
 </body>
 </html>
